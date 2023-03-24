@@ -1,0 +1,14 @@
+<library path="lib/libskyway_plugin">
+    <class type="binary_loopback::BinaryLoopback" base_class_type="skyway_plugin::SkyWayBinaryPlugin">
+        <description>loopback binary input</description>
+    </class>
+    <class type="json_loopback::JsonLoopback" base_class_type="skyway_plugin::SkyWayJsonPlugin">
+        <description>loopback json input</description>
+    </class>
+    <class type="string_loopback::StringLoopback" base_class_type="skyway_plugin::SkyWayStringPlugin">
+        <description>loopback string input</description>
+    </class>
+    <class type="string_pub_sub::StringPubSub" base_class_type="skyway_plugin::SkyWayStringPlugin">
+        <description>string pub-sub</description>
+    </class>
+</library>

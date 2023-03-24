@@ -1,0 +1,6 @@
+peer_id: "data_callee"
+data:
+  - key: "string_connections"
+    type: "string"
+    plugins:
+      - plugin_name: "string_loopback::StringLoopback"

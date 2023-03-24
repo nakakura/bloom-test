@@ -1,0 +1,6 @@
+string message_type
+string command
+int64 pid
+---
+bool result
+int64 pid

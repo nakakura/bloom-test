@@ -1,0 +1,6 @@
+[submodule "examples/gstreamer_launcher"]
+	path = examples/gstreamer_launcher
+	url = https://github.com/ntt-t3/gstreamer_launcher
+[submodule "examples/skyway_for_ros_examples"]
+	path = examples/skyway_for_ros_examples
+	url = https://github.com/ntt-t3/skyway_for_ros_examples

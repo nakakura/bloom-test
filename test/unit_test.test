@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <test pkg="skyway" type="skyway_test_node" test-name="test_node"/>
+</launch>

@@ -1,0 +1,22 @@
+[package]
+name = "rust_module"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib", "rlib"]
+name = "skyway"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "*"
+futures = "0.3.25"
+skyway-webrtc-gateway-caller = "0.2.1"
+once_cell = "*"
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = { version = "1.0.87", default-features = false, features = ["alloc"] }
+shaku = "*"
+tokio = { version = "1.21.2", features = ["full"] }
+
+[dev-dependencies]
+mockall = "0.11.3"

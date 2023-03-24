@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+EndUserProgram -> SkyWay_for_ROS: DataConnection Request
+SkyWay_for_ROS --> EndUserProgram: Response
+SkyWay_for_ROS -> SkyWayServer: DataConnection Request
+SkyWayServer -> Peer: DataConnection Request
+...DataConnection Session Establish...
+EndUserProgram -> SkyWay_for_ROS: Event Request
+SkyWay_for_ROS --> EndUserProgram: Open Event
+
+@enduml

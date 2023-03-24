@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+group Local to Remote
+    EndUserProgram -> Plugin: Data
+    Plugin -> SkyWay_for_ROS: Data
+    SkyWay_for_ROS -> Peer: Data
+end
+
+group Reemote to Local
+    SkyWay_for_ROS <- Peer: Data
+    Plugin <- SkyWay_for_ROS: Data
+    EndUserProgram <- Plugin: Data
+end
+
+@enduml

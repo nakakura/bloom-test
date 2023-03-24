@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+EndUserProgram -> SkyWay_for_ROS: MediaCall Request
+EndUserProgram <-- SkyWay_for_ROS: MediaCall Response
+...DataConnection Establish...
+EndUserProgram -> SkyWay_for_ROS: Event Request
+SkyWay_for_ROS --> EndUserProgram: Media Stream Event
+@enduml

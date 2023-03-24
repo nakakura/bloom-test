@@ -1,0 +1,7 @@
+peer_id: "data_caller"
+data:
+  - key: "json_connections"
+    target: "target_id"
+    type: "string"
+    plugins:
+      - plugin_name: "string_loopback::StringLoopback"

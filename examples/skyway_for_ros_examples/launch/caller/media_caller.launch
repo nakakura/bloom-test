@@ -1,0 +1,7 @@
+<launch>
+  <node name="skyway_control" pkg="skyway_for_ros_examples" type="media_caller.py" output="screen">
+    <rosparam command="load" file="$(find skyway_for_ros_examples)/config/caller/media.yaml"/>
+  </node>
+  <node name="skyway" pkg="skyway" type="skyway" output="screen"/>
+  <node name="gstreamer_launcher" pkg="gstreamer_launcher" type="main.py" output="screen"/>
+</launch>

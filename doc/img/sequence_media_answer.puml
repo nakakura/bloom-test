@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+EndUserProgram -> SkyWay_for_ROS: Event Request
+SkyWay_for_ROS --> EndUserProgram: PEER CALL Event
+EndUserProgram -> SkyWay_for_ROS: MediaAnswer Request
+EndUserProgram <-- SkyWay_for_ROS: MediaAnswer Response
+...DataConnection Establish...
+EndUserProgram -> SkyWay_for_ROS: Event Request
+SkyWay_for_ROS --> EndUserProgram: Media Stream Event
+@enduml

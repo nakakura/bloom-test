@@ -1,0 +1,6 @@
+<launch>
+  <node name="skyway_control" pkg="skyway_for_ros_examples" type="data_callee.py" output="screen">
+    <rosparam command="load" file="$(find skyway_for_ros_examples)/config/callee/data.yaml"/>
+  </node>
+  <node name="skyway" pkg="skyway" type="skyway" output="screen"/>
+</launch>

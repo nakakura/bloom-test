@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+...Peer Object Created in SkyWayServer...
+
+EndUserProgram -> SkyWay_for_ROS: Peer Status Request
+SkyWay_for_ROS -> SkyWayServer: Peer Status Request
+SkyWayServer --> SkyWay_for_ROS: Peer Status Response
+EndUserProgram <-- SkyWay_for_ROS: Peer Status Response
+@enduml

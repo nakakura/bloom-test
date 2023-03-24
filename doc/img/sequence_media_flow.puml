@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+group Local to Remote
+    ...STREAM Event...
+    EndUserProgram -> SkyWay_for_ROS: Media
+    SkyWay_for_ROS -> Peer: Media
+end
+
+group Reemote to Local
+    ...STREAM Event...
+    SkyWay_for_ROS <- Peer: Media
+    EndUserProgram <- SkyWay_for_ROS: Media
+end
+
+@enduml
