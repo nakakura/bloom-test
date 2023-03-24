@@ -1,0 +1,12 @@
+Source: ros-noetic-skyway
+Section: misc
+Priority: optional
+Maintainer: Nakakura <t.nakakura@ntt.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev <!nocheck>, ros-noetic-catkin, ros-noetic-message-generation, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-rostest <!nocheck>, ros-noetic-std-msgs
+Homepage: https://github.com/ntt-t3/skyway_for_ros
+Standards-Version: 3.9.2
+
+Package: ros-noetic-skyway
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-message-runtime, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-std-msgs
+Description: Package for using SkyWay from ROS
